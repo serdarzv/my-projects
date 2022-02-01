@@ -55,7 +55,7 @@ def greet_admin():
 
 # Rewrite a function named greet which uses template file named `greet.html` under `templates` folder 
 # and assign to the dynamic route of ('/<name>')
-@app.route('/<name>')
+@app.route('/z/<name>')
 def greet2(name):
     return render_template('greet.html', name=name)
 
